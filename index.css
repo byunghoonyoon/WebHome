@@ -1,0 +1,162 @@
+/* font */
+
+/* lib */
+
+/* root */
+
+/* custom */
+.top-bar{
+  position:sticky;
+  z-index:9999;
+  width:100%;
+}
+
+/* logo */
+.top-bar__logo{
+  width:240px;
+  color:white;
+}
+/* menu-1 */
+.top-bar__menu-1{
+  color:white;
+}
+.top-bar__menu-1>ul>li{
+  width:150px;
+}
+.top-bar__menu-1>ul>li>a{
+  height:65px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:8px;
+}
+
+/* menu-2 */
+.top-bar__menu-1__menu-2>li>a{
+  color:white;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background-color:#232323;
+}
+.top-bar__menu-1__menu-2>li>a{
+  height:65px;
+}
+.top-bar__menu-1__menu-2{
+  display: none;
+}
+/* hover */
+.top-bar__menu-1 ul>li:hover>a{
+  background-color:white;
+  color:#232323;
+}
+.top-bar__menu-1>ul>li:nth-child(3):hover>.top-bar__menu-1__menu-2{
+  display:block;
+}
+
+/*  */
+
+
+/* lib */
+
+/* section1 */
+.top-bar{
+  top:0;
+}
+.section-1{
+  margin-bottom:20px;
+
+}
+/* section2 */
+
+.section-1>a>img{
+  margin-top:20px;
+}
+.section-2>ul>li>a{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-size:1.2rem;
+}
+.section-2>ul>li>a:nth-child(2){
+  margin-top:15px;
+  font-weight:bold;
+  padding:10px;
+}
+
+.section-2>ul>li>a:first-child{
+  position:relative;
+  overflow:hidden;
+}
+
+.section-2>ul>li>a:first-child>img{
+  transition:0.4s;
+  z-index:-1;
+}
+.section-2>ul>li:hover>a:first-child>img{
+  transform:scale(1.2);
+}
+/* before 색 지정 */
+
+.section-2>ul>li>a:first-child::before{
+  background-color:rgba(0,0,0,0);
+  position:absolute;
+  top:0%;
+  left:0%;
+  right:0%;
+  bottom:0%;
+  content:"";
+  transition:linear 0.4s;
+}
+.section-2>ul>li:hover>a:first-child::before{
+  background-color:rgba(0,0,0,0.7); 
+
+}
+
+/* after 글자 지정 */
+.section-2>ul>li>a:first-child::after{
+  content:"VIEW";
+  color:white;
+  font-size:1.2rem;
+  font-weight:bold;
+  border:4px white solid;
+  border-radius:8px;
+  position:absolute;
+  padding:5px;
+  letter-spacing:3px;
+  opacity:0;
+  transition:linear 0.4s;
+}
+.section-2>ul>li:hover>a:first-child::after{
+  opacity:1;
+}
+
+.section-2>ul>li:hover>a:nth-child(2){
+  background-image:linear-gradient(
+    177deg,
+    rgb(199,211,212) 30%,
+    #F0EDCC 100%
+  )
+}
+.top-bar.hover>.con>a{
+  color:rgba(199,211,212);
+}
+.top-bar.hover{
+  background-color:rgba(0,0,0,0);
+}
+
+header.hover>div{
+   color:rgba(199,211,212);
+  background-color:rgb(175, 180, 255);
+
+}
+
+.top-bar.hover ul>li>a{
+   color:rgba(199,211,212);
+  background-color:rgb(175, 180, 255);
+}
+.top-bar.hover ul>li:hover>a{
+   color:rgba(199,211,212);
+  background-color:rgb(245, 232, 199);
+}
+

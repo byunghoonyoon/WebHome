@@ -1,0 +1,15 @@
+.con-min-width:first-child{
+  con-min-width:var(--site-width);
+  height:65px;
+  background-color:#232323;
+}
+.con{
+  width:var(--site-width);
+}
+img{
+  display:block;
+  width:100%;
+}
+:root{
+  --site-width:1200px;
+}
